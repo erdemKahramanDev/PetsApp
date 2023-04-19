@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"
+            android:icon="@drawable/home"/>
+
+        <item
+            android:id="@+id/nav_search"
+            android:title="@string/search_text"
+            android:icon="@drawable/search_icon"/>
+
+        <item
+            android:id="@+id/nav_all_categories"
+            android:title="@string/categories"
+            android:icon="@drawable/c7"
+            />
+
+        <item
+            android:id="@+id/nav_locaiton"
+            android:title="@string/missing"
+            android:icon="@drawable/location"/>
+    </group>
+
+
+    <item android:title="Profile">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="@string/profile"
+                    android:icon="@drawable/profile"/>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="@string/Logout"
+                    android:icon="@drawable/ic_baseline_lock_24"/>
+
+             </group>
+        </menu>
+    </item>
+
+    <item android:title="Categories">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_dog"
+                    android:title="@string/animal"
+                    android:icon="@drawable/dog"/>
+
+                <item
+                    android:id="@+id/nav_petshop1"
+                    android:title="@string/pets"
+                    android:icon="@drawable/petshop"/>
+
+                <item
+                    android:id="@+id/nav_vet"
+                    android:title="@string/vet"
+                    android:icon="@drawable/vetevete"/>
+
+                <item
+                    android:id="@+id/nav_map"
+                    android:title="@string/maps"
+                    android:icon="@drawable/mapicon"/>
+            </group>
+        </menu>
+
+
+    </item>
+</menu>
