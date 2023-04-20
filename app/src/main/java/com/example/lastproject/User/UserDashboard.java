@@ -146,6 +146,26 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                 startActivity( new Intent (getApplicationContext(),Profile.class));
                 break;
         }
+        switch (item.getItemId()){
+            case R.id.nav_dog:
+                startActivity( new Intent (getApplicationContext(),Pets.class));
+                break;
+        }
+        switch (item.getItemId()){
+            case R.id.nav_petshop1:
+                startActivity( new Intent (getApplicationContext(),PetShop.class));
+                break;
+        }
+        switch (item.getItemId()){
+            case R.id.nav_vet:
+                startActivity( new Intent (getApplicationContext(),Vet.class));
+                break;
+        }
+        switch (item.getItemId()){
+            case R.id.nav_map:
+                startActivity( new Intent (getApplicationContext(),UserDashboard.class));
+                break;
+        }
         return true;
     }
 
@@ -153,10 +173,12 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         categoriesRecycler.setHasFixedSize(true);
         categoriesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<CategoriesHelperClass> CategoriesLocations = new ArrayList<>();
-        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.a, "McDonald's"));
-        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.petshop, "Edenrobe"));
-        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.petshop, "J."));
-        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.petshop, "Walmart"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.kara, "MİNİK"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.k2, "UYKULU"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.k3, "KARABAŞ"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.k4, "TEKİR"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.k5, "MAX"));
+        CategoriesLocations.add(new CategoriesHelperClass(R.drawable.k6, "KRAL"));
         adapter = new CategoriesAdapter(CategoriesLocations);
         categoriesRecycler.setAdapter(adapter);
     }
@@ -164,10 +186,12 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         mostViewedRecycler.setHasFixedSize(true);
         mostViewedRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.petshop, "McDonald's"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.petshop, "Edenrobe"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.petshop, "J."));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.petshop, "Walmart"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve1, "VET.BÜŞRA KAZAN"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve2, "VET.JACK HOPE"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve3, "VET.HATİCE ÜN"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve4, "VET.MUSTAFA OK"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve5, "VET.MAGGIE"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.ve6, "VET.MARRY WILSON"));
         adapter = new MostViewedAdpater(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);
     }
@@ -175,9 +199,12 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         featuredRecycler.setHasFixedSize(true);
         featuredRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<FeaturedHelperClass> featuredLocations = new ArrayList<>();
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.petshop, "Mcdonald's", "asbkd asudhlasn saudnas jasdjasl hisajdl asjdlnas"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.petshop, "Edenrobe", "asbkd asudhlasn saudnas jasdjasl hisajdl asjdlnas"));
-        featuredLocations.add(new FeaturedHelperClass(R.drawable.petshop, "Walmart", "asbkd asudhlasn saudnas jasdjasl hisajdl asjdlnas"));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe1, "ÇOK SEVENLER", "Sizin değer verdiklerinize değer veriyoruz."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe2, "HALKALI", "Sizin sevdikleriniz için buradayız."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe3, "LACİVERT", "Güvende hissettirip mutlu olmak için buradayız."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe4, "ÇELİK", "İlk önceliğimiz sizsiniz."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe5, "VETRIO", "Her zaman sizinleyiz."));
+        featuredLocations.add(new FeaturedHelperClass(R.drawable.pe6, "MAYWELL", "Bizi tercih etmeden önce değer verdiğiniz canlıları bir kez daha düşünün."));
         adapter = new FeaturedAdpater(featuredLocations);
         featuredRecycler.setAdapter(adapter);
     }

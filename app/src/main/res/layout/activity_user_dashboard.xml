@@ -255,7 +255,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="most vıewed"
+                            android:text="Veterınary"
                             android:textSize="20sp"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/bariol_bold"
@@ -291,7 +291,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="categorıes"
+                            android:text="pets"
                             android:textSize="20sp"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/bariol_bold"
