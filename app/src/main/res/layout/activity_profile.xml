@@ -169,7 +169,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Completed"
+                                android:text="Tamamlandı"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -205,7 +205,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="Ratings"
+                                android:text="Yıldızlar"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -232,7 +232,7 @@
                     android:fontFamily="@font/calibri"
                     android:gravity="center"
                     android:padding="13dp"
-                    android:text="User Info"
+                    android:text="Kullanıcı Bilgisi"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -250,7 +250,7 @@
                     android:fontFamily="@font/calibri"
                     android:gravity="center"
                     android:padding="13dp"
-                    android:text="Experience"
+                    android:text="Deneyim"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -268,7 +268,7 @@
                     android:fontFamily="@font/calibri"
                     android:gravity="center"
                     android:padding="13dp"
-                    android:text="Review"
+                    android:text="Bakınız"
                     android:textColor="@color/colorBlack"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -302,7 +302,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="About Me"
+                                android:text="Hakkımda"
                                 android:fontFamily="@font/calibri"
                                 android:textSize="17sp"
                                 android:textStyle="bold" />
@@ -315,7 +315,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Edit"
+                                android:text="Düzenle"
                                 android:fontFamily="@font/calibri"
                                 android:textColor="#FFCF66"
                                 android:layout_marginEnd="10dp"
@@ -347,7 +347,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Contact"
+                            android:text="İletişim"
                             android:textSize="17sp"
                             android:fontFamily="@font/calibri"
                             android:textStyle="bold" />
@@ -360,7 +360,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Edit"
+                            android:text="Düzenle"
                             android:textColor="#FFCF66"
                             android:layout_marginEnd="10dp"
                             android:textSize="14sp" />

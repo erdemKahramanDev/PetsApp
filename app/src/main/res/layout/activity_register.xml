@@ -36,10 +36,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:fontFamily="@font/alegreya_sans_sc_black"
-                android:text="@string/create_account"
+                android:text="Hesap Oluşturunuz"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
-                android:textSize="40sp"
+                android:textSize="3mm"
                 android:transitionName="transition_title_text" />
 
 
@@ -68,7 +68,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_full_name"
+                android:hint="Adınız Soyadınız"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
@@ -124,7 +124,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Date of Birth (dd/mm/yyyy)"
+                android:hint="Doğum Tarihiniz (dd/mm/yyyy)"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
@@ -152,7 +152,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_password"
+                android:hint="Şifre"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
@@ -180,7 +180,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/enter_password"
+                android:hint="Şifrenizi Tekrar Giriniz"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
@@ -208,7 +208,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Mobile"
+                android:hint="Telefon Numaranız"
                 android:textColorHint="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
@@ -236,7 +236,7 @@
                 android:layout_marginBottom="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Gender"
+                android:text="Cinsiyet Seçiniz"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
@@ -253,7 +253,7 @@
                     android:id="@+id/male"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Male" />
+                    android:text="Erkek" />
 
 
                 <RadioButton
@@ -261,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Female" />
+                    android:text="Kadın" />
 
 
                 <RadioButton
@@ -269,7 +269,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Other" />
+                    android:text="Diğer" />
             </RadioGroup>
 
 
@@ -283,7 +283,7 @@
             android:background="@color/colorPrimary"
             android:elevation="5dp"
             android:onClick="callNextSigupScreen"
-            android:text="Register"
+            android:text="Üyelik Oluştur"
             android:textColor="@color/colorBlack"
             android:transitionName="transition_next_btn" />
         <ProgressBar

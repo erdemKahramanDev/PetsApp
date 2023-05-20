@@ -5,23 +5,23 @@
 
         <item
             android:id="@+id/nav_home"
-            android:title="@string/home"
+            android:title="Ana Sayfa"
             android:icon="@drawable/home"/>
 
         <item
             android:id="@+id/nav_search"
-            android:title="@string/search_text"
+            android:title="Arama..."
             android:icon="@drawable/search_icon"/>
 
         <item
             android:id="@+id/nav_all_categories"
-            android:title="@string/categories"
+            android:title="Bütün Kategoriler"
             android:icon="@drawable/c7"
             />
 
         <item
             android:id="@+id/nav_locaiton"
-            android:title="@string/missing"
+            android:title="Dost Ekle"
             android:icon="@drawable/location"/>
     </group>
 
@@ -33,12 +33,12 @@
 
                 <item
                     android:id="@+id/nav_profile"
-                    android:title="@string/profile"
+                    android:title="Profil"
                     android:icon="@drawable/profile"/>
 
                 <item
                     android:id="@+id/nav_logout"
-                    android:title="@string/Logout"
+                    android:title="Çıkış Yap"
                     android:icon="@drawable/ic_baseline_lock_24"/>
 
              </group>
@@ -52,7 +52,7 @@
 
                 <item
                     android:id="@+id/nav_dog"
-                    android:title="@string/animal"
+                    android:title="Dostlarımız"
                     android:icon="@drawable/dog"/>
 
                 <item
@@ -62,12 +62,12 @@
 
                 <item
                     android:id="@+id/nav_vet"
-                    android:title="@string/vet"
+                    android:title="Veterinerler"
                     android:icon="@drawable/vetevete"/>
 
                 <item
                     android:id="@+id/nav_map"
-                    android:title="@string/maps"
+                    android:title="Haritalar"
                     android:icon="@drawable/mapicon"/>
             </group>
         </menu>

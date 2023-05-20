@@ -136,7 +136,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="@string/animal"
+                            android:text="Dostlarımız"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -190,7 +190,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="@string/vet"
+                            android:text="Veterinerler"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -217,7 +217,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/calibri"
-                            android:text="@string/maps"
+                            android:text="Haritalar"
                             android:textAlignment="center" />
                     </LinearLayout>
                 </LinearLayout>
@@ -255,16 +255,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Veterınary"
+                            android:text="Veterinerler"
                             android:textSize="20sp"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/bariol_bold"
                             android:textAllCaps="true"/>
 
                         <TextView
+                            android:id="@+id/view1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/view_all"
+                            android:text="Hepsini Görüntüle"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"/>
 
@@ -291,16 +292,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="pets"
+                            android:text="Dostlarımız"
                             android:textSize="20sp"
                             android:textColor="@color/colorBlack"
                             android:fontFamily="@font/bariol_bold"
                             android:textAllCaps="true"/>
 
                         <TextView
+                            android:id="@+id/view2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/view_all"
+                            android:text="Hepsini Görüntüle"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"/>
 

@@ -21,13 +21,18 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.lastproject.Common.Add;
+import com.example.lastproject.Common.Connect;
 import com.example.lastproject.HelperClasses.CategoriesAdapter;
 import com.example.lastproject.HelperClasses.CategoriesHelperClass;
 import com.example.lastproject.HelperClasses.FeaturedAdpater;
 import com.example.lastproject.HelperClasses.FeaturedHelperClass;
 import com.example.lastproject.HelperClasses.MostViewedAdpater;
 import com.example.lastproject.HelperClasses.MostViewedHelperClass;
+import com.example.lastproject.LocationOwner.Maps;
 import com.example.lastproject.R;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -42,6 +47,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     RecyclerView featuredRecycler;
     RecyclerView.Adapter adapter;
     ImageView menuIcon;
+    TextView btn1,btn2;
     LinearLayout contentView;
     RecyclerView mostViewedRecycler, categoriesRecycler;
     DrawerLayout drawerLayout;
@@ -51,7 +57,23 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_dashboard);
+        btn1 = findViewById(R.id.view1);
 
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Vet.class));
+            }
+        });
+
+        btn2 = findViewById(R.id.view2);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Pets.class));
+            }
+        });
         featuredRecycler = findViewById(R.id.featured_recycler);
         menuIcon = findViewById(R.id.menu_icon);
         contentView = findViewById(R.id.content);
@@ -70,7 +92,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
     }
 
     public void callRetailerScreens(View view){
-        startActivity(new Intent(getApplicationContext(), UserDashboard.class));
+        startActivity(new Intent(getApplicationContext(), Connect.class));
     }
     private void navigationDrawer() {
 
@@ -162,8 +184,13 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
                 break;
         }
         switch (item.getItemId()){
+            case R.id.nav_locaiton:
+                startActivity( new Intent (getApplicationContext(), Add.class));
+                break;
+        }
+        switch (item.getItemId()){
             case R.id.nav_map:
-                startActivity( new Intent (getApplicationContext(),UserDashboard.class));
+                startActivity( new Intent (getApplicationContext(), Maps.class));
                 break;
         }
         return true;
@@ -224,7 +251,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
     public void callMaps(View view) {
 
-        startActivity( new Intent (getApplicationContext(),UserDashboard.class));
+        startActivity( new Intent (getApplicationContext(),Maps.class));
     }
 }
 

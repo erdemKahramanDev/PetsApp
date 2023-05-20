@@ -14,9 +14,8 @@
         <ImageView
             android:id="@+id/ps_image"
             android:layout_width="100dp"
-            android:layout_height="150dp"
-            android:src="@drawable/petshop"
-            android:scaleType="centerCrop"/>
+            android:layout_height="100dp"
+            android:src="@drawable/petshop"/>
 
         <TextView
             android:id="@+id/ps_title"
@@ -28,24 +27,6 @@
             android:textSize="20dp"
             android:fontFamily="@font/alegreya_sans_sc_black"/>
 
-        <RatingBar
-            android:id="@+id/ps_rating"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Widget.AppCompat.RatingBar.Small"
-            android:layout_below="@id/ps_title"
-            android:layout_toRightOf="@+id/ps_image"
-            android:layout_marginLeft="10dp"
-            android:rating="5"/>
-
-        <TextView
-            android:id="@+id/ps_desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="İşte Sevmenin Tam Zamanı"
-            android:layout_below="@+id/ps_rating"
-            android:layout_toRightOf="@id/ps_image"
-            android:padding="10dp"/>
 
 
 
